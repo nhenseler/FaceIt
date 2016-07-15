@@ -11,7 +11,7 @@ import UIKit
 @IBDesignable
 class FaceView: UIView
 {
-    // MARK: Public API
+    // Norbert: Public API
 
     // don't forget that inspectables must be explicitly typed (no inference allowed)
     @IBInspectable
@@ -40,7 +40,7 @@ class FaceView: UIView
         }
     }
     
-    // MARK: Private Implementation
+    // Norbert: Private Implementation
 
     private var skullRadius: CGFloat {
         return min(bounds.size.width, bounds.size.height) / 2 * scale
@@ -136,7 +136,7 @@ class FaceView: UIView
         return path
     }
     
-    // MARK: iOS Drawing Method
+    // Norbert: iOS Drawing Method
 
     override func drawRect(rect: CGRect)
     {
@@ -149,7 +149,7 @@ class FaceView: UIView
         pathForBrow(.Right).stroke()
     }
     
-    // MARK: Constants
+    // Norbert: Constants
 
     private struct Ratios {
         static let SkullRadiusToEyeOffset: CGFloat = 3
